@@ -11,4 +11,5 @@ Randomized amount of input and output neurons:
 ![image](https://github.com/xxxVIKTORxxx/random_NN/assets/109345462/caf8532e-93cc-4cf8-bf9f-15c50cf219a8)
 
 Randomly assigned inputs and outputs neurons:
-![image](https://github.com/xxxVIKTORxxx/random_NN/assets/109345462/87bd5792-8a6b-41e9-bcb3-fcc54d0670ea)
+![image](https://github.com/xxxVIKTORxxx/random_NN/assets/109345462/119ee144-d62f-4f91-97be-649aed5b181b)
+
