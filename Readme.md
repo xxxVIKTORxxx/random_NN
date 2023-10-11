@@ -7,5 +7,8 @@ Randomized connections between neurons:
 Randomized Weights of connections between neurons:
 ![image](https://github.com/xxxVIKTORxxx/random_NN/assets/109345462/f502d995-a760-4760-ac5d-349f556d5f2b)
 
+Randomized amount of input and output neurons:
+![image](https://github.com/xxxVIKTORxxx/random_NN/assets/109345462/caf8532e-93cc-4cf8-bf9f-15c50cf219a8)
+
 Randomly assigned inputs and outputs neurons:
 ![image](https://github.com/xxxVIKTORxxx/random_NN/assets/109345462/87bd5792-8a6b-41e9-bcb3-fcc54d0670ea)
