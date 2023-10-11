@@ -56,14 +56,22 @@ while inputs_set < input_neurons or outputs_set < output_neurons:
             set_not_set = randint(1,2)
             if set_not_set == 1:
                 input_output = randint(1,2)
+
                 if inputs_set < input_neurons:
                     if input_output == 1:
-                        neurons_chain_W[neuron_key].append('input_neuron')
-                        inputs_set +=1
-                        print(f'Neuron {neuron_key} are Input neuron: \n {neurons_chain_W[neuron_key]}')
+                        if neurons_chain_W[neuron_key][-1] != 'input_neuron' and neurons_chain_W[neuron_key][-1] != 'output_neuron':
+                            neurons_chain_W[neuron_key].append('input_neuron')
+                            inputs_set +=1
+                            print(f'Neuron {neuron_key} are Input neuron: \n {neurons_chain_W[neuron_key]}')
+                        else:
+                            pass
+
                 elif outputs_set < output_neurons:
                     if input_output == 2:
-                        neurons_chain_W[neuron_key].append('output_neuron')
-                        outputs_set +=1
-                        print(f'Neuron {neuron_key} are Output neuron: \n {neurons_chain_W[neuron_key]}')
+                        if neurons_chain_W[neuron_key][-1] != 'output_neuron' and neurons_chain_W[neuron_key][-1] != 'input_neuron':
+                            neurons_chain_W[neuron_key].append('output_neuron')
+                            outputs_set +=1
+                            print(f'Neuron {neuron_key} are Output neuron: \n {neurons_chain_W[neuron_key]}')
+                        else:
+                            pass
 
