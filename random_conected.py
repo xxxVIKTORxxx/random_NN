@@ -48,3 +48,21 @@ input_neurons = randint( int((len(neurons_chain.keys())/3)*0.33), int(len(neuron
 output_neurons = randint( int((len(neurons_chain.keys())/3)*0.33), int(len(neurons_chain.keys())/3) )
 print(f'input neurons amount: {input_neurons}; output neurons amount: {output_neurons}')
 
+# assigning input neurons randomly
+inputs_set = 0
+outputs_set = 0
+for neuron_key in neurons_chain_W:
+        set_not_set = randint(1,2)
+        if set_not_set == 1:
+            input_output = randint(1,2)
+            if inputs_set < input_neurons:
+                if input_output == 1:
+                    neurons_chain_W[neuron_key].append('input_neuron')
+                    inputs_set +=1
+                    print(neurons_chain_W[neuron_key])
+            elif outputs_set < output_neurons:
+                if input_output == 2:
+                    neurons_chain_W[neuron_key].append('output_neuron')
+                    outputs_set +=1
+                    print(neurons_chain_W[neuron_key])
+
