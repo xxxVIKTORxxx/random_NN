@@ -51,18 +51,19 @@ print(f'input neurons amount: {input_neurons}; output neurons amount: {output_ne
 # assigning input neurons randomly
 inputs_set = 0
 outputs_set = 0
-for neuron_key in neurons_chain_W:
-        set_not_set = randint(1,2)
-        if set_not_set == 1:
-            input_output = randint(1,2)
-            if inputs_set < input_neurons:
-                if input_output == 1:
-                    neurons_chain_W[neuron_key].append('input_neuron')
-                    inputs_set +=1
-                    print(neurons_chain_W[neuron_key])
-            elif outputs_set < output_neurons:
-                if input_output == 2:
-                    neurons_chain_W[neuron_key].append('output_neuron')
-                    outputs_set +=1
-                    print(neurons_chain_W[neuron_key])
+while inputs_set < input_neurons or outputs_set < output_neurons:
+    for neuron_key in neurons_chain_W:
+            set_not_set = randint(1,2)
+            if set_not_set == 1:
+                input_output = randint(1,2)
+                if inputs_set < input_neurons:
+                    if input_output == 1:
+                        neurons_chain_W[neuron_key].append('input_neuron')
+                        inputs_set +=1
+                        print(f'Neuron {neuron_key} are Input neuron: \n {neurons_chain_W[neuron_key]}')
+                elif outputs_set < output_neurons:
+                    if input_output == 2:
+                        neurons_chain_W[neuron_key].append('output_neuron')
+                        outputs_set +=1
+                        print(f'Neuron {neuron_key} are Output neuron: \n {neurons_chain_W[neuron_key]}')
 
